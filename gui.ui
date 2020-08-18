@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>635</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dashboard</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../icon.png</normaloff>../../icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>190</y>
+      <width>191</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Exploratory Data Analysis</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>280</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Model fitting </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>491</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>TeX Gyre Bonum</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>AEFCO : A Dashboard for Covid-19</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>600</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>Datasets sources: Kaggle, John Hopkins Unviersity</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_fit_model">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>350</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>Fit Model</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_fbprophet_forecast">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>500</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>Forecast the feature</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_arima">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>420</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>Fit Model</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_poly_forecast">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>350</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>Forecast the features</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="eda_combo_box">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>180</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Concise graph of Covid-19 in India</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Daily increase in confirmed cases</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Daily increase in recoveries</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Daily increase in deaths</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Covid-19 in India over time</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Covid-19 in World over time</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Available hospitals and beds</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Patients in different age groups</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>No. of tests, and their reports</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Confirmed cases in India vs outiside</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Confirmed cases on world map</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>No. of Deaths on world map</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Active cases on world map</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>World gradient confirmed cases</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>World gradient number of deaths</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Heat map of Covid-19 in world</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="_date">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>110</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="placeholderText">
+     <string>mm-dd-yyyy</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>110</y>
+      <width>81</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Last Date</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_eda_plot">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>180</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Serif</family>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>Show the Plot</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="degree">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>350</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Degree</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>350</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Polynomial 
+Regression</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>430</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LSTM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>510</y>
+      <width>81</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fb Prophet</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="dif">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>270</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Days in Future</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Fbprophet_features">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>500</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Daily Confirmed</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Daily Recovered</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Daily Deaths</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pb_lstm">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>420</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>Forecast the feature</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../back.qrc"/>
+ </resources>
+ <connections/>
+</ui>
